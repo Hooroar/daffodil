@@ -1,0 +1,17 @@
+version: "3.9"
+
+volumes:
+  daffodil_data:
+
+services:
+  daffodil:
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgress
+      - POSTGRES_DB=hooroar
+    volumes:
+      - daffodil_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
