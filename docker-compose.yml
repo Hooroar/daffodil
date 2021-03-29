@@ -9,7 +9,7 @@ services:
     restart: always
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgress
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=hooroar
     volumes:
       - daffodil_data:/var/lib/postgresql/data
